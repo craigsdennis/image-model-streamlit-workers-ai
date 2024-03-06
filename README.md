@@ -1,6 +1,8 @@
-# Streamlit Cloudflare Workers AI starters
+# Image Model Cloudflare Workers AI Streamlit starters
 
 This is a collection of [Streamlit](https://streamlit.io) applications that are making use of [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
+
+This, like all of us, is a Work in Progress.
 
 ## Installation
 
