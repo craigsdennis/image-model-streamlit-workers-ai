@@ -1,0 +1,5 @@
+python-dotenv
+requests
+streamlit
+streamlit_drawable_canvas
+watchdog
