@@ -14,7 +14,7 @@ load_dotenv()
 api_token = os.environ["CLOUDFLARE_API_TOKEN"]
 account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
 
-"# Stable Diffusion Image Masking"
+"# Masking"
 
 image_upload = st.file_uploader("Gimme a photo")
 

@@ -8,7 +8,7 @@ import streamlit as st
 
 load_dotenv()
 
-"# Vision"
+"# Seeing is believing"
 
 image_upload = st.file_uploader("Gimme a photo")
 
