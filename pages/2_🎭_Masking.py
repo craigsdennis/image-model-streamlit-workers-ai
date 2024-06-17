@@ -1,18 +1,14 @@
 from base64 import b64encode
-import os
 import io
 
-
-from dotenv import load_dotenv
 from PIL import Image, ImageOps
 import requests
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 
-load_dotenv()
-api_token = os.environ["CLOUDFLARE_API_TOKEN"]
-account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
+api_token = st.secrets["CLOUDFLARE_API_TOKEN"]
+account_id = st.secrets["CLOUDFLARE_ACCOUNT_ID"]
 
 "# Masking"
 

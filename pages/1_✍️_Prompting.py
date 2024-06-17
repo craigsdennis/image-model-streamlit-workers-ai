@@ -1,9 +1,6 @@
-from dotenv import load_dotenv
-import os
 import requests
 import streamlit as st
 
-load_dotenv()
 
 "# Prompting"
 
@@ -20,8 +17,8 @@ with st.form("text_to_image"):
     prompt = st.text_area("Prompt")
     submitted = st.form_submit_button("Generate")
     if submitted:
-        account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
-        api_token = os.environ["CLOUDFLARE_API_TOKEN"]
+        account_id = st.secrets["CLOUDFLARE_ACCOUNT_ID"]
+        api_token = st.secrets["CLOUDFLARE_API_TOKEN"]
         headers = {
             "Authorization": f"Bearer {api_token}",
         }

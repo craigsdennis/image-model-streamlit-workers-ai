@@ -1,12 +1,8 @@
 import io
-import os
 
-from dotenv import load_dotenv
 import requests
 import streamlit as st
 
-
-load_dotenv()
 
 "# Seeing is believing"
 
@@ -37,8 +33,8 @@ with st.form("ask-about-photo"):
     submitted = st.form_submit_button("Ask")
     if submitted:
         with st.spinner("Processing image..."):
-            api_token = os.environ["CLOUDFLARE_API_TOKEN"]
-            account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
+            api_token = st.secrets["CLOUDFLARE_API_TOKEN"]
+            account_id = st.secrets["CLOUDFLARE_ACCOUNT_ID"]
             headers = {
                 "Authorization": f"Bearer {api_token}",
             }
