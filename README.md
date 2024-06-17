@@ -8,7 +8,7 @@ This, like all of us, is a Work in Progress.
 
 ## Installation
 
-Copy [.env.example](.env.example) to `.env`.
+Copy [.streamlit/secrets.toml.example](./.streamlit/secrets.toml.example) to `.streamlit/secrets.toml`.
 
 ```bash
 python -m venv venv
